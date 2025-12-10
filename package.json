@@ -16,6 +16,8 @@
         "check-types": "turbo run check-types"
     },
     "devDependencies": {
+        "autoprefixer": "^10.4.20",
+        "postcss": "^8.4.47",
         "prettier": "^3.7.4",
         "tailwindcss": "^4.1.17",
         "turbo": "^2.6.3"
