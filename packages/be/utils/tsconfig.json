@@ -1,0 +1,14 @@
+{
+  "extends": "../../shared/config/tsconfig.base.be.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "paths": {
+      "@ss-mono/shared/config/*": ["../../shared/config/*"]
+    }
+  },
+  "include": ["src/**/*", "*.ts", "be-util.ts"],
+  "exclude": ["node_modules", "dist", "build", ".next", "out"]
+}
+

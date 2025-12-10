@@ -1,0 +1,21 @@
+{
+  "extends": "../../../packages/shared/config/tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@ss-mono/shared/config/*": ["../../../packages/shared/config/*"],
+      "@ss-mono/fe/ui/ss": ["../../../packages/fe/ui/ss/src"],
+      "@ss-mono/fe/ui/ss/*": ["../../../packages/fe/ui/ss/src/*"],
+      "@ss-mono/fe/ui/bgr": ["../../../packages/fe/ui/bgr/src"],
+      "@ss-mono/fe/ui/bgr/*": ["../../../packages/fe/ui/bgr/src/*"],
+      "@ss-mono/fe/utils": ["../../../packages/fe/utils/src"],
+      "@ss-mono/fe/utils/*": ["../../../packages/fe/utils/src/*"]
+    }
+  },
+  "include": ["src/**/*", "*.ts", "*.tsx"],
+  "exclude": ["node_modules", "dist", "build", ".next", "out"]
+}
+
