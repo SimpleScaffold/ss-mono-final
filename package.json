@@ -1,9 +1,16 @@
 {
     "name": "ss-mono",
     "private": true,
+    "workspaces": [
+        "apps/**",
+        "packages/**"
+    ],
     "scripts": {
         "build": "turbo run build",
-        "dev": "turbo run dev",
+        "dev": "node scripts/dev.js",
+        "dev:test": "turbo run dev --filter=test",
+        "dev:main": "turbo run dev --filter=main",
+        "dev:admin": "turbo run dev --filter=admin",
         "lint": "turbo run lint",
         "format": "prettier --write \"**/*.{ts,tsx,md}\"",
         "check-types": "turbo run check-types"
